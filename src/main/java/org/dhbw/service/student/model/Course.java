@@ -5,18 +5,16 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import lombok.AllArgsConstructor;
+//import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Entity
 @Data // Lombok hinzufügt automatisch die Getter und Setter Methoden an die Klasse Student
-@AllArgsConstructor // Hinzufügt automatisch die Getter und Setter Methoden an die Klasse Student
-public class Student {
+//@AllArgsConstructor // Hinzufügt automatisch die Getter und Setter Methoden an die Klasse Student
+public class Course {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String firstName;
-    private String lastName;
-    private String studentNumber;
+    private String title;
 }
